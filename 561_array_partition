@@ -1,0 +1,11 @@
+# https://leetcode.com/problems/array-partition-i/
+
+class Solution(object):
+    def arrayPairSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # we need to get the sum of the even indexed 
+        # elements in a sorted array
+        return sum(sorted(nums)[::2])
